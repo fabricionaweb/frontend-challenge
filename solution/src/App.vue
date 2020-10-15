@@ -1,19 +1,40 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div class="app">
+    <the-header />
     <router-view />
   </div>
 </template>
 
+<script lang="ts">
+import TheHeader from "@/components/TheHeader.vue";
+
+export default {
+  components: {
+    TheHeader,
+  },
+};
+</script>
+
 <style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
+@import "./assets/variables"
+
+body
+  font-family $font-family-primary
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+  margin 0
+  font-size 16px
+  background-color $body-background
+  color $text-color
+
+.app-container
+  display flex
+  width 100%
+  min-height 100%
+  max-width $container-width
+  box-sizing border-box
+  padding-left $container-gutter
+  padding-right $container-gutter
+  margin-left auto
+  margin-right auto
 </style>
