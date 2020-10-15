@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <the-header />
+    <TheHeader />
     <router-view />
   </div>
 </template>
@@ -26,6 +26,9 @@ body
   font-size 16px
   background-color $body-background
   color $text-color
+
+button
+  cursor pointer
 
 .app-container
   display flex
