@@ -27,11 +27,18 @@ body
   background-color $body-background
   color $text-color
 
-button
-  cursor pointer
+button, input[type="checkbox"]
+  &:not(disabled)
+    cursor pointer
+
+.clear-button
+  appearance none
+  background none
+  border 0
+  padding 0
+  margin 0
 
 .app-container
-  display flex
   width 100%
   min-height 100%
   max-width $container-width

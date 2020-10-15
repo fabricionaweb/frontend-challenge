@@ -4,11 +4,11 @@
       <h1>Transcriptions</h1>
 
       <nav>
-        <button>
+        <button class="clear-button">
           <IconUpload />
         </button>
 
-        <button>
+        <button class="clear-button">
           <IconDocument />
         </button>
       </nav>
@@ -33,11 +33,13 @@ export default {
 
 .the-header
   height 4.3125rem
+  margin-bottom $container-gutter
   background-color #FFFFFF
   box-shadow 0 1px 2px 0 rgba(0, 0, 0, 0.24),
              0 1px 3px 0 rgba(0, 0, 0, 0.12)
 
 .app-container
+  display flex
   align-items center
 
 h1
@@ -52,10 +54,6 @@ nav
   display flex
 
 button
-  appearance none
-  background none
-  border 0
-  padding 0
   margin 0 0 0 $container-gutter
   width 1.5rem
   height 1.5rem
