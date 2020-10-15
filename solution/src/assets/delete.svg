@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fill 160</title>
+    <g id="Challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hover" transform="translate(-841.000000, -117.000000)">
+            <path d="M880.5,93.5 L880.5,551.5 L143.5,551.5 L143.5,93.5 L880.5,93.5 Z" id="Rectangle-Copy-4" stroke="#EAEDEF" fill="#FFFFFF"></path>
+            <path d="M842.142857,134.777778 C842.142857,136 843.171429,137 844.428571,137 L853.571429,137 C854.828571,137 855.857143,136 855.857143,134.777778 L855.857143,121.444444 L842.142857,121.444444 L842.142857,134.777778 L842.142857,134.777778 Z M857,118.111111 L853,118.111111 L851.857143,117 L846.142857,117 L845,118.111111 L841,118.111111 L841,120.333333 L857,120.333333 L857,118.111111 L857,118.111111 Z" id="Fill-160" fill="#BFC4CE"></path>
+        </g>
+    </g>
+</svg>
