@@ -4,7 +4,9 @@ import axios from "redaxios";
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+const API_URL = process.env.VUE_APP_API_URL;
+
+const store = new Vuex.Store({
   state: () => ({
     items: [],
   }),
@@ -22,7 +24,7 @@ export default new Vuex.Store({
   actions: {
     loadItems({ commit }) {
       axios
-        .get("http://www.mocky.io/v2/5ae1c5792d00004d009d7e5c")
+        .get(API_URL)
         .then(response => response.data)
         .then(items => {
           commit("SET_ITEMS", items);
@@ -30,3 +32,5 @@ export default new Vuex.Store({
     },
   },
 });
+
+export default store;
