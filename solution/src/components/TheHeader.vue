@@ -17,15 +17,16 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue";
 import IconUpload from "@/assets/upload.svg";
 import IconDocument from "@/assets/document.svg";
 
-export default {
+export default Vue.extend({
   components: {
     IconUpload,
     IconDocument,
   },
-};
+});
 </script>
 
 <style lang="stylus" scoped>

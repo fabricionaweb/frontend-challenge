@@ -28,38 +28,23 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue";
+import { mapState } from "vuex";
 import IconDelete from "@/assets/delete.svg";
 import IconAdd from "@/assets/add.svg";
 
-export default {
-  data() {
-    return {
-      items: [
-        {
-          id: 1,
-          voice: "Voice 2",
-          text: "This is a one line sentence made to show how it fits",
-        },
-        {
-          id: 2,
-          voice: "Voice 1",
-          text:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ",
-        },
-        {
-          id: 3,
-          voice: "Voice 1",
-          text:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        },
-      ],
-    };
+export default Vue.extend({
+  computed: mapState(["items"]),
+
+  mounted() {
+    // this.$store.dispatch("loadItems");
   },
+
   components: {
     IconDelete,
     IconAdd,
   },
-};
+});
 </script>
 
 <style lang="stylus" scoped>
@@ -90,6 +75,7 @@ ul
 
   &-title
     margin-top 0
+    color $title-color-secondary
 
   &-text
     margin-bottom 0
