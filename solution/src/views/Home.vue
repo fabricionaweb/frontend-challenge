@@ -15,7 +15,7 @@
               <strong>{{ item.voice }}</strong>
             </p>
             <p class="item-text">{{ item.text }}</p>
-            <button class="clear-button item-delete">
+            <button class="clear-button item-delete" title="Delete row">
               <IconDelete />
             </button>
           </div>
@@ -23,7 +23,9 @@
       </ul>
     </div>
 
-    <button class="clear-button add-button"><IconAdd /></button>
+    <button class="clear-button add-button">
+      <IconAdd />
+    </button>
   </main>
 </template>
 

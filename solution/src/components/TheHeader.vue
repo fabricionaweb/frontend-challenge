@@ -4,11 +4,11 @@
       <h1>Transcriptions</h1>
 
       <nav>
-        <button class="clear-button">
+        <button class="clear-button" title="Upload data">
           <IconUpload />
         </button>
 
-        <button class="clear-button">
+        <button class="clear-button" title="Get data" @click="loadItems">
           <IconDocument />
         </button>
       </nav>
@@ -22,6 +22,12 @@ import IconUpload from "@/assets/upload.svg";
 import IconDocument from "@/assets/document.svg";
 
 export default Vue.extend({
+  methods: {
+    loadItems() {
+      this.$store.dispatch("loadItems");
+    },
+  },
+
   components: {
     IconUpload,
     IconDocument,
